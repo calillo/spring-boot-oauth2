@@ -29,7 +29,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         	.withUser("admin")
         	.password(passwordEncoder().encode("admin"))
         	.roles("ADMIN")  
-        	.authorities("CAR_READ", "CAR_ADD", "CAR_DELETE");
+        	.authorities("CAR_READ", "CAR_CREATE", "CAR_UPDATE", "CAR_DELETE");
     }
     
     @Bean
